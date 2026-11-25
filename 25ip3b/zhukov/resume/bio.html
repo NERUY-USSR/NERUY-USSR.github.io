@@ -3,206 +3,176 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Биография, характер, команда и автомобили Тоби Маршала — персонажа фильма «Need for Speed: Жажда скорости». Учебный проект студента группы 25ИП3б Жукова С.С.">
+  <meta name="description" content="Биография, характер и автомобили Тоби Маршала — персонажа фильма «Need for Speed: Жажда скорости». Учебный проект студента группы 25ИП3б Жукова С.С.">
   <meta name="author" content="Жуков С.С.">
   <title>О персонаже — Резюме студента Жукова С.С. группы 25ИП3б</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  <a class="skip-link" href="#main">К содержанию</a>
+<body class="bg-light">
+  <a class="visually-hidden-focusable" href="#main">К содержанию</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">TM</span>
-        <span class="brand-text">Marshall Performance<small>motors · mount kisco, ny</small></span>
-      </a>
-      <nav class="site-nav" aria-label="Основная навигация">
-        <a href="index.html">Резюме</a>
-        <a class="active" href="bio.html">О персонаже</a>
-      </nav>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Тоби Маршал</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Резюме</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="bio.html">О персонаже</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="bg-white border-bottom py-4">
+    <div class="container">
+      <h1 class="display-6 mb-2">Человек, который возвращается за своими</h1>
+      <p class="lead text-body-secondary mb-2">Биография и характер Тоби Маршала — персонажа фильма «Need for Speed: Жажда скорости».</p>
+      <p class="small text-body-secondary mb-0">Тоби Маршал · фильм 2014 года · роль исполнил Аарон Пол</p>
     </div>
   </header>
 
-  <main id="main">
-    <section class="page-hero container" aria-labelledby="bio-title">
-      <p class="eyebrow">Страница 2 · биография и характер</p>
-      <h1 id="bio-title">Человек, который возвращается за своими</h1>
-      <p class="page-lead">Тоби Маршал — центральный персонаж фильма «Need for Speed: Жажда скорости». Он не супергерой и не идеальный гонщик: обычный механик из маленькой мастерской, для которого скорость стала способом вернуть справедливость и защитить память друга.</p>
-      <p class="student"><strong>Тоби Маршал</strong> · персонаж фильма 2014 года · роль исполнил Аарон Пол</p>
-    </section>
-
-    <div class="container layout">
-      <div class="main-col">
-        <section class="card">
-          <h2>Краткая биография</h2>
-          <p>Тоби вырос в Маунт-Киско, небольшом городке в штате Нью-Йорк, рядом с отцовской мастерской <strong>Marshall Performance Motors</strong>. После смерти отца он взял мастерскую на себя. Днём Тоби и его команда ремонтировали и настраивали машины, а ночью участвовали в уличных гонках, чтобы закрывать счета и сохранить дело.</p>
-          <p>Всё изменилось после заказа на уникальный Shelby GT500, который команда собрала для продажи. Бывший напарник Тоби, амбициозный гонщик Дино Брюстер, спровоцировал смертельную гонку. Погиб молодой механик Пит Коулман, а вину за аварию переложили на Тоби. Он получил два года тюрьмы и вышел на свободу с одним намерением — восстановить правду.</p>
-          <p>Шансом на это стала подпольная гонка <strong>De Leon</strong>. Вместе с командой и брокером Джулией Мэддон Тоби за 45 часов пересёк страну, добрался до Сан-Франциско и вышел на старт. Он победил, спас Дино из горящей машины и добился того, чтобы настоящий виновник смерти Пита был наказан. После короткого заключения за участие в уличных гонках Тоби вернулся к мастерской, команде и Джулии.</p>
-          <p>Все события и организации в этой биографии относятся к художественному произведению. Страница подготовлена как учебный проект по персонажу.</p>
+  <main id="main" class="container my-4">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <section class="card mb-4">
+          <div class="card-body">
+            <h2 class="h4 card-title">Краткая биография</h2>
+            <p>Тоби вырос в Маунт-Киско, небольшом городке в штате Нью-Йорк, рядом с отцовской мастерской <strong>Marshall Performance Motors</strong>. После смерти отца он взял мастерскую на себя. Днём Тоби и его команда ремонтировали и настраивали машины, а ночью участвовали в уличных гонках, чтобы закрывать счета и сохранить дело.</p>
+            <p>Всё изменилось после заказа на уникальный Shelby GT500, который команда собрала для продажи. Бывший напарник Тоби, амбициозный гонщик Дино Брюстер, спровоцировал смертельную гонку. Погиб молодой механик Пит Коулман, а вину за аварию переложили на Тоби. Он получил два года тюрьмы и вышел на свободу с одним намерением — восстановить правду.</p>
+            <p>Шансом на это стала подпольная гонка <strong>De Leon</strong>. Вместе с командой и брокером Джулией Мэддон Тоби за 45 часов пересёк страну, добрался до Сан-Франциско и вышел на старт. Он победил, спас Дино из горящей машины и добился того, чтобы настоящий виновник смерти Пита был наказан. После короткого заключения за участие в уличных гонках Тоби вернулся к мастерской, команде и Джулии.</p>
+            <p class="mb-0">Все события и организации в этой биографии относятся к художественному произведению. Страница подготовлена как учебный проект по персонажу.</p>
+          </div>
         </section>
 
-        <section class="card">
-          <h2>Хронология</h2>
-          <ol class="timeline">
-            <li>
-              <div class="timeline-head">
-                <h3>Рождение в Маунт-Киско</h3>
-                <span class="period">1984</span>
-              </div>
-              <p class="org">Семья Маршал · Нью-Йорк</p>
-            </li>
-            <li>
-              <div class="timeline-head">
-                <h3>Мастерская отца и первые гонки</h3>
-                <span class="period">2002 — 2012</span>
-              </div>
-              <p class="org">Marshall Performance Motors · команда друзей</p>
-            </li>
-            <li>
-              <div class="timeline-head">
-                <h3>Смертельная гонка и приговор</h3>
-                <span class="period">2012</span>
-              </div>
-              <p class="org">Тюрьма штата Нью-Йорк · два года заключения</p>
-            </li>
-            <li>
-              <div class="timeline-head">
-                <h3>Побег через страну и победа в De Leon</h3>
-                <span class="period">2014</span>
-              </div>
-              <p class="org">Маунт-Киско → Сан-Франциско · 45 часов в пути</p>
-            </li>
-            <li>
-              <div class="timeline-head">
-                <h3>Возвращение в мастерскую</h3>
-                <span class="period">2015</span>
-              </div>
-              <p class="org">Marshall Performance Motors · новый этап</p>
-            </li>
-            <li>
-              <div class="timeline-head">
-                <h3>Наставничество и реставрационные проекты</h3>
-                <span class="period">2026</span>
-              </div>
-              <p class="org">Нью-Йорк · команда и новая смена механиков</p>
-            </li>
-          </ol>
+        <section class="card mb-4">
+          <div class="card-body">
+            <h2 class="h4 card-title">Хронология</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0 d-flex justify-content-between align-items-start gap-3">
+                <div>
+                  <strong>Рождение в Маунт-Киско</strong>
+                  <div class="small text-body-secondary">Семья Маршал · Нью-Йорк</div>
+                </div>
+                <span class="badge text-bg-light">1984</span>
+              </li>
+              <li class="list-group-item px-0 d-flex justify-content-between align-items-start gap-3">
+                <div>
+                  <strong>Мастерская отца и первые гонки</strong>
+                  <div class="small text-body-secondary">Marshall Performance Motors · команда друзей</div>
+                </div>
+                <span class="badge text-bg-light">2002 — 2012</span>
+              </li>
+              <li class="list-group-item px-0 d-flex justify-content-between align-items-start gap-3">
+                <div>
+                  <strong>Смертельная гонка и приговор</strong>
+                  <div class="small text-body-secondary">Тюрьма штата Нью-Йорк · два года заключения</div>
+                </div>
+                <span class="badge text-bg-light">2012</span>
+              </li>
+              <li class="list-group-item px-0 d-flex justify-content-between align-items-start gap-3">
+                <div>
+                  <strong>Побег через страну и победа в De Leon</strong>
+                  <div class="small text-body-secondary">Маунт-Киско → Сан-Франциско · 45 часов в пути</div>
+                </div>
+                <span class="badge text-bg-light">2014</span>
+              </li>
+              <li class="list-group-item px-0 d-flex justify-content-between align-items-start gap-3">
+                <div>
+                  <strong>Возвращение в мастерскую</strong>
+                  <div class="small text-body-secondary">Marshall Performance Motors · новый этап</div>
+                </div>
+                <span class="badge text-bg-light">2015</span>
+              </li>
+              <li class="list-group-item px-0 d-flex justify-content-between align-items-start gap-3">
+                <div>
+                  <strong>Наставничество и реставрационные проекты</strong>
+                  <div class="small text-body-secondary">Нью-Йорк · команда и новая смена механиков</div>
+                </div>
+                <span class="badge text-bg-light">2026</span>
+              </li>
+            </ul>
+          </div>
         </section>
 
-        <section class="card">
-          <h2>Характер и принципы</h2>
-          <ul class="checklist">
-            <li>Сначала делает, потом говорит: его аргумент — подготовленная машина и честный результат.</li>
-            <li>Не бросает своих даже ценой личного риска: возвращается за Питом, Бенни и командой.</li>
-            <li>Умеет признать ошибку и отвечает за последствия своих решений.</li>
-            <li>Сохраняет спокойствие в критической ситуации и быстро перестраивает план.</li>
-            <li>Ценит честную работу, уважает тех, кто учится, и не прощает предательства.</li>
-          </ul>
-        </section>
-
-        <section class="card">
-          <h2>Люди рядом</h2>
-          <ul class="projects">
-            <li>
-              <strong>Джулия Мэддон</strong>
-              <span>Брокер по экзотическим автомобилям. Помогает Тоби попасть на De Leon и становится его близким человеком.</span>
-            </li>
-            <li>
-              <strong>Бенни Джексон</strong>
-              <span>Пилот и связист команды, известный как Маверик. Даже в безвыходной ситуации находит третий вариант.</span>
-            </li>
-            <li>
-              <strong>Джо Пек</strong>
-              <span>Механик и мастер на все руки. Отвечает за технику, инструменты и «зверя» команды — Ford F-450.</span>
-            </li>
-            <li>
-              <strong>Финн</strong>
-              <span>Компьютерный специалист команды: камеры, связь и цифровая сторона гонок.</span>
-            </li>
-            <li>
-              <strong>Пит Коулман</strong>
-              <span>Молодой механик и ученик Тоби. Его память становится главной причиной, по которой Тоби не сдаётся.</span>
-            </li>
-          </ul>
+        <section class="card mb-4">
+          <div class="card-body">
+            <h2 class="h4 card-title">Характер и принципы</h2>
+            <ul class="mb-0">
+              <li>Сначала делает, потом говорит: его аргумент — подготовленная машина и честный результат.</li>
+              <li>Не бросает своих даже ценой личного риска: возвращается за Питом, Бенни и командой.</li>
+              <li>Умеет признать ошибку и отвечает за последствия своих решений.</li>
+              <li>Сохраняет спокойствие в критической ситуации и быстро перестраивает план.</li>
+              <li>Ценит честную работу, уважает тех, кто учится, и не прощает предательства.</li>
+            </ul>
+          </div>
         </section>
       </div>
 
-      <aside class="side-col">
-        <section class="card">
-          <h2>Увлечения</h2>
-          <ul class="hobbies">
-            <li><strong>Автомобили</strong><span>Реставрация классики и постройка моторов.</span></li>
-            <li><strong>Гонки</strong><span>Трек, уличные заезды и разбор траекторий.</span></li>
-            <li><strong>Авиация</strong><span>Полёты с Бенни и планирование маршрутов.</span></li>
-            <li><strong>Дорога</strong><span>Путешествия без карты и лишних остановок.</span></li>
-          </ul>
+      <aside class="col-lg-4">
+        <section class="card mb-4">
+          <div class="card-body">
+            <h2 class="h4 card-title">Увлечения</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0"><strong>Автомобили</strong><div class="small text-body-secondary">Реставрация классики и постройка моторов.</div></li>
+              <li class="list-group-item px-0"><strong>Гонки</strong><div class="small text-body-secondary">Трек, уличные заезды и разбор траекторий.</div></li>
+              <li class="list-group-item px-0"><strong>Авиация</strong><div class="small text-body-secondary">Полёты с Бенни и планирование маршрутов.</div></li>
+              <li class="list-group-item px-0"><strong>Дорога</strong><div class="small text-body-secondary">Путешествия без карты и лишних остановок.</div></li>
+            </ul>
+          </div>
         </section>
 
-        <section class="card">
-          <h2>Сильные стороны</h2>
-          <ul class="tags">
-            <li>Верность команде</li>
-            <li>Инженерное чутьё</li>
-            <li>Хладнокровие</li>
-            <li>Упорство</li>
-            <li>Честность</li>
-            <li>Быстрая реакция</li>
-          </ul>
+        <section class="card mb-4">
+          <div class="card-body">
+            <h2 class="h4 card-title">Люди рядом</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0"><strong>Джулия Мэддон</strong><div class="small text-body-secondary">Брокер по экзотическим автомобилям, помогает попасть на De Leon.</div></li>
+              <li class="list-group-item px-0"><strong>Бенни Джексон</strong><div class="small text-body-secondary">Пилот и связист команды, известный как Маверик.</div></li>
+              <li class="list-group-item px-0"><strong>Джо Пек</strong><div class="small text-body-secondary">Механик и мастер на все руки, отвечает за технику команды.</div></li>
+              <li class="list-group-item px-0"><strong>Пит Коулман</strong><div class="small text-body-secondary">Молодой механик и ученик Тоби.</div></li>
+            </ul>
+          </div>
         </section>
 
-        <section class="card">
-          <h2>За рулём</h2>
-          <ul class="cars">
-            <li><strong>Ford Torino GT 1969</strong><span>личный проект · ветеран гаража</span></li>
-            <li><strong>Ford Mustang Shelby GT500 2014</strong><span>сборка команды · 234 mph</span></li>
-            <li><strong>Koenigsegg Agera R</strong><span>машина финального заезда</span></li>
-            <li><strong>Ford Mustang GT 2015</strong><span>новая дорога после финиша</span></li>
-          </ul>
+        <section class="card mb-4">
+          <div class="card-body">
+            <h2 class="h4 card-title">За рулём</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0"><strong>Ford Torino GT 1969</strong><div class="small text-body-secondary">личный проект · ветеран гаража</div></li>
+              <li class="list-group-item px-0"><strong>Ford Mustang Shelby GT500 2014</strong><div class="small text-body-secondary">сборка команды · 234 mph</div></li>
+              <li class="list-group-item px-0"><strong>Koenigsegg Agera R</strong><div class="small text-body-secondary">машина финального заезда</div></li>
+              <li class="list-group-item px-0"><strong>Ford Mustang GT 2015</strong><div class="small text-body-secondary">новая дорога после финиша</div></li>
+            </ul>
+          </div>
         </section>
 
-        <section class="card quote">
-          <h2>Кредо</h2>
-          <blockquote>
-            <p>«Скорость важна только тогда, когда есть ради кого возвращаться».</p>
-          </blockquote>
-          <p class="quote-note">Формулировка в рамках учебного проекта.</p>
-        </section>
-
-        <section class="card">
-          <h2>Фильм</h2>
-          <dl class="facts">
-            <dt>Название</dt>
-            <dd>Need for Speed: Жажда скорости</dd>
-            <dt>Год</dt>
-            <dd>2014</dd>
-            <dt>Режиссёр</dt>
-            <dd>Скотт Уо</dd>
-            <dt>Роль</dt>
-            <dd>Аарон Пол</dd>
-            <dt>Жанр</dt>
-            <dd>Боевик, криминал, автоспорт</dd>
-          </dl>
+        <section class="card mb-4">
+          <div class="card-body">
+            <h2 class="h4 card-title">Фильм</h2>
+            <dl class="row small mb-0">
+              <dt class="col-5">Название</dt>
+              <dd class="col-7">Need for Speed: Жажда скорости</dd>
+              <dt class="col-5">Год</dt>
+              <dd class="col-7">2014</dd>
+              <dt class="col-5">Режиссёр</dt>
+              <dd class="col-7">Скотт Уо</dd>
+              <dt class="col-5">Роль</dt>
+              <dd class="col-7">Аарон Пол</dd>
+              <dt class="col-5">Жанр</dt>
+              <dd class="col-7 mb-0">Боевик, криминал, автоспорт</dd>
+            </dl>
+          </div>
         </section>
       </aside>
     </div>
 
-    <div class="container">
-      <section class="next-page" aria-labelledby="back-title">
-        <div>
-          <p class="eyebrow">Вернуться</p>
-          <h2 id="back-title">Основное резюме</h2>
-          <p>Опыт работы, образование, навыки, языки и награды.</p>
-        </div>
-        <a class="button" href="index.html">← К резюме</a>
-      </section>
+    <div class="text-center my-4">
+      <a class="btn btn-outline-dark" href="index.html">← К резюме</a>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Учебный проект по фильму «Need for Speed: Жажда скорости» · ПензГТУ, 2026</p>
-      <p>Фото: <a href="https://commons.wikimedia.org/wiki/File:Aaron_Paul_at_Los_Angeles_Comic_Con_2026-1.jpg">Kevin Paul, Wikimedia Commons</a>, CC BY 4.0</p>
+  <footer class="bg-white border-top py-3 mt-4">
+    <div class="container small text-body-secondary d-flex flex-column flex-md-row justify-content-between gap-2">
+      <p class="mb-0">Учебный проект по фильму «Need for Speed: Жажда скорости» · ПензГТУ, 2026</p>
+      <p class="mb-0">Фото: <a href="https://commons.wikimedia.org/wiki/File:Aaron_Paul_at_Los_Angeles_Comic_Con_2026-1.jpg">Kevin Paul, Wikimedia Commons</a>, CC BY 4.0</p>
     </div>
   </footer>
 </body>
