@@ -1,19 +1,288 @@
+:root {
+  --ink: #1f2a33;
+  --muted: #65727c;
+  --line: #e2e7ea;
+  --accent: #24425f;
+  --paper: #ffffff;
+}
+
+body {
+  background: #edf0f2;
+  color: var(--ink);
+}
+
+.page {
+  max-width: 1060px;
+  margin: 36px auto;
+  padding: 44px 52px 28px;
+  background: var(--paper);
+  border-top: 4px solid var(--accent);
+  box-shadow: 0 12px 32px rgba(20, 35, 50, .10);
+}
+
+a {
+  color: var(--accent);
+  text-decoration-color: rgba(36, 66, 95, .35);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-color: var(--accent);
+}
+
 .photo {
+  width: 200px;
+  height: 200px;
+  flex: 0 0 auto;
   object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.masthead {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1.6rem;
+  margin-bottom: 1.9rem;
+}
+
+.eyebrow {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  font-size: 2.45rem;
+  font-weight: 700;
+  letter-spacing: -.03em;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.meta {
+  font-size: .92rem;
+}
+
+.note {
+  font-size: .78rem;
+  color: var(--muted);
+}
+
+.section-title {
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: .45rem;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 1rem;
+}
+
+.entry + .entry {
+  margin-top: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+}
+
+.entry h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.dates {
+  font-size: .78rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.org {
+  color: var(--muted);
+  font-size: .88rem;
+  margin: .15rem 0 .5rem;
+}
+
+.entry ul {
+  font-size: .94rem;
+  padding-left: 1.15rem;
+}
+
+.entry li + li {
+  margin-top: .25rem;
+}
+
+.entry li::marker {
+  color: var(--accent);
+}
+
+.projects li + li {
+  margin-top: .6rem;
+  padding-top: .6rem;
+  border-top: 1px dashed var(--line);
+}
+
+.project-note {
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+.side-block + .side-block {
+  margin-top: 1.5rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.side-title {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: .8rem;
+}
+
+.facts dt {
+  font-weight: 500;
+  font-size: .76rem;
+  color: var(--muted);
+}
+
+.facts dd {
+  font-size: .86rem;
+  margin-bottom: .5rem;
+}
+
+.facts dd:last-child {
+  margin-bottom: 0;
+}
+
+.skill {
+  display: inline-block;
+  padding: .18rem .5rem;
+  border-radius: 2px;
+  background: #eef2f5;
+  color: #31465a;
+  font-size: .74rem;
+}
+
+.soft {
+  font-size: .8rem;
+  color: var(--muted);
+}
+
+.lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .35rem 0;
+  font-size: .88rem;
+}
+
+.lang + .lang {
+  border-top: 1px dashed var(--line);
+}
+
+.lang-level {
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: #eef2f5;
+  padding: .1rem .4rem;
+  border-radius: 2px;
+}
+
+.awards,
+.hobbies {
+  font-size: .83rem;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.awards li,
+.hobbies li {
+  position: relative;
+  padding-left: .85rem;
+}
+
+.awards li + li,
+.hobbies li + li {
+  margin-top: .4rem;
+}
+
+.awards li::before,
+.hobbies li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .5em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 2.2rem;
+  padding-top: 1rem;
+  font-size: .76rem;
+  color: var(--muted);
+}
+
+@media (max-width: 991.98px) {
+  .page {
+    padding: 32px 28px 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    margin: 0;
+    padding: 24px 18px;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 @media print {
-  .navbar,
-  .btn,
-  footer {
-    display: none !important;
-  }
-
   body {
-    background: #fff !important;
+    background: #fff;
   }
 
-  .card {
+  .page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border-top: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .section-title,
+  .side-title {
+    break-after: avoid;
+  }
+
+  .entry,
+  .projects li,
+  .side-block {
     break-inside: avoid;
   }
 }
